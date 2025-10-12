@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 function Card({image , name}){
     const navigate = useNavigate();
     const handleclick = () => {
-        navigate('/gift' ,{state:{avatar:image , profile:name}});
+        navigate('/maingift' ,{state:{avatar:image , profile:name}});
     }
     return(
         <div

@@ -15,7 +15,7 @@ function App() {
             <Route path="/wish" element={<Wish />} />
             <Route path="/cake" element={<Cake />} />
             <Route path="/user" element={<User />} />
-            <Route path="/gift" element={<Gift />} />
+            <Route path="/maingift" element={<Gift />} />
           </Routes>
         </Router>
      
