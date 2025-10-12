@@ -11,6 +11,7 @@ function App() {
     
          <Router>
           <Routes>
+            <Route path='*' element={<Login />} />
             <Route path="/" element={<Login />} />
             <Route path="/wish" element={<Wish />} />
             <Route path="/cake" element={<Cake />} />
