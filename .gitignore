@@ -21,3 +21,24 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# local .env
+.env
+
+# IDE/editor
+.vscode/
+.idea/
+
+# build output
+/dist
+
+# lockfiles
+package-lock.json
+yarn.lock
+
+# system
+Thumbs.db
+
+# optional: ignore public media or large assets if you don't want them in git
+# public/media/
+# src/assets/media/

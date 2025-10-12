@@ -1,0 +1,116 @@
+/* Full-page background */
+.login-page {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: url('../assets/images/pookie.jpg'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Dark overlay for fade effect */
+.login-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Netflix Logo text */
+.netflix-logo {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #e50914;
+  letter-spacing: 2px;
+  z-index: 2;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+/* Login Card */
+.login-card {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 50px 60px;
+  border-radius: 8px;
+  width: 380px;
+  height: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Title */
+.login-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Input */
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* Button */
+.btn-login {
+  width: 100%;
+  background-color: #e50914;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease-in;
+}
+
+/* gap between inputs and submit */
+.input-group { margin-bottom: 3rem; }
+
+.btn-login:hover {
+  background-color: #f6121d;
+}
+
+.hints {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+details {
+  background: rgba(245, 191, 191, 0.03);
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #ddd;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+summary::-webkit-details-marker { display:none; }
+
+.hint-body {
+  margin-top: 8px;
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
