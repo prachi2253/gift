@@ -8,7 +8,7 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (password === 'prateek') {
+    if (password === '23oct2003') {
       navigate('/wish');
     } else {
       alert('OOPS! Wrong Password.');
@@ -18,7 +18,7 @@ function Login() {
   return (
     <div className="login-page">
       {/* Netflix Logo */}
-        <div className="netflix-logo">NETFLIX</div>
+        <div className="netflix-logo">BRAINROT</div>
 
         {/* Sign-In Card */}
         <div className="login-card">
@@ -41,15 +41,19 @@ function Login() {
             <div className="hints">
               <details>
                 <summary>Hint 1</summary>
-                <div className="hint-body">Try something you used recently.</div>
+                <div className="hint-body">what is today?</div>
               </details>
               <details>
                 <summary>Hint 2</summary>
-                <div className="hint-body">It might be a pet's name or favourite word.</div>
+                <div className="hint-body">Date.</div>
               </details>
               <details>
                 <summary>Hint 3</summary>
-                <div className="hint-body">If stuck, check your notes or ask someone close.</div>
+                <div className="hint-body">Ohhoo , use few alphabets</div>
+              </details>
+              <details>
+                <summary>Hint 3</summary>
+                <div className="hint-body">23oct2003</div>
               </details>
             </div>
         </div>
