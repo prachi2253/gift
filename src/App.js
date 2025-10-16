@@ -1,6 +1,7 @@
 
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+
 import Login from './components/login';
 import Wish from './components/wish';
 import Cake from './components/cake/cake';
@@ -11,12 +12,13 @@ function App() {
     
          <Router>
           <Routes>
-            <Route path='*' element={<Login />} />
+            
             <Route path="/" element={<Login />} />
             <Route path="/wish" element={<Wish />} />
             <Route path="/cake" element={<Cake />} />
             <Route path="/user" element={<User />} />
             <Route path="/maingift" element={<Gift />} />
+            <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </Router>
      

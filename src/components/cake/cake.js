@@ -2,7 +2,7 @@ import React from 'react';
 import './cake.css';
 function Cake() {
   return (
-    <div>
+    <div className='cake-wrapper'>
         <div className="velas">
             <div className="fuego"></div>
             <div className="fuego"></div>
