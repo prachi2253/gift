@@ -8,7 +8,8 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (password === '23oct2003') {
+    const correctPassword = process.env.REACT_APP_SECRET_PASSWORD;
+    if (password === correctPassword) {
       navigate('/wish');
     } else {
       alert('OOPS! Wrong Password.');
@@ -50,10 +51,6 @@ function Login() {
               <details>
                 <summary>Hint 3</summary>
                 <div className="hint-body">Ohhoo , use few alphabets</div>
-              </details>
-              <details>
-                <summary>Hint 3</summary>
-                <div className="hint-body">23oct2003</div>
               </details>
             </div>
         </div>

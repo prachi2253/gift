@@ -12,7 +12,7 @@ function User(){
                     <path id="curve" d="M20,80 Q200,0 380,80" fill="transparent" />
                     <text fill="#e50914" fontSize="82" fontWeight="bold">
                         <textPath href="#curve" startOffset="50%" textAnchor="middle">
-                            NETFLIX
+                            BRAINROT
                         </textPath>
                     </text>
                 </svg>

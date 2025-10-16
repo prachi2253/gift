@@ -7,8 +7,8 @@ function Navbar({avatar , profileName}) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div className="container-fluid">
-            
-            <a className="navbar-brand" href="#"style={{ color: "#e50914", fontWeight: "bold" }}>NETFLIX</a>
+
+            <a className="navbar-brand" href="#"style={{ color: "#e50914", fontWeight: "bold" }}>BRAINROT</a>
             <button
                 className="navbar-toggler"
                 type="button"
@@ -23,10 +23,10 @@ function Navbar({avatar , profileName}) {
 
             <div className="collapse navbar-collapse justify-content-between" id="navbarNav">
                 <ul className="navbar-nav ">
-                    <li className="nav-item"><a className="nav-link" href="#">Home</a></li>
-                    <li className="nav-item"><a className="nav-link" href="#">About</a></li>
+                    <li className="nav-item"><a className="nav-link" href="#">From Prachi</a></li>
+                    <li className="nav-item"><a className="nav-link" href="#">About You</a></li>
                     <li className="nav-item"><a className="nav-link" href="#">Gallery</a></li>
-                    <li className="nav-item"><a className="nav-link" href="#">Contact</a></li>
+                    <li className="nav-item"><a className="nav-link" href="#">Surprise</a></li>
                 </ul>
 
                 <h1 className="gift-wish">Happy Birthday Baby!</h1>
