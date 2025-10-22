@@ -25,7 +25,7 @@ function Login() {
   };
 
   return (
-    <div className="login-page">
+    <div className="login-page " style={{ '--bg-img': `url(${process.env.REACT_APP_COLLAGE})` }}>
       <div className="netflix-logo">BRAINROT</div>
 
       <div className="login-card">

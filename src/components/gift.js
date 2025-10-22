@@ -1,11 +1,6 @@
 import React from "react";
 import Navbar from './navbar';
 import { useLocation } from 'react-router-dom';
-import us from '../assets/images/Us.jpg';
-import badmosh from '../assets/images/Badmosh.jpg';
-import surprise from '../assets/images/surprise.jpg';
-import collage from '../assets/images/collage.jpg';
-import survideo from '../assets/videos/surprise.mp4';
 import './gift.css';
 
 function Gift() {
