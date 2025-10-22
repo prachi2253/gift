@@ -1,0 +1,162 @@
+/* Full-page background */
+.login-page {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden; /* Ensures rotated background doesn't overflow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+/* Rotated background image layer */
+.login-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('../assets/images/collage.jpg');
+  background-size: contain; /* Ensures full image is visible */
+ 
+  background-position: center;
+  transform: rotate(-5deg) scale(1.1); /* Slight left tilt + zoom fix */
+  transform-origin: center;
+  z-index: 0;
+  transition: transform 1s ease-in-out;
+}
+
+
+/* Dark overlay for fade effect */
+.login-page::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+/* Netflix Logo text */
+.netflix-logo {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #e50914;
+  letter-spacing: 2px;
+  z-index: 2;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+/* Login Card */
+.login-card {
+  position: relative;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 50px 60px;
+  border-radius: 8px;
+  width: 380px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Title */
+.login-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Input */
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* gap between inputs and submit */
+.input-group { margin-bottom: 3rem; }
+
+/* Button */
+.btn-login {
+  width: 100%;
+  background-color: #e50914;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease-in;
+}
+
+.btn-login:hover {
+  background-color: #f6121d;
+}
+
+/* Hints */
+.hints {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+details {
+  background: rgba(245, 191, 191, 0.03);
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #ddd;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+summary::-webkit-details-marker { display: none; }
+
+.hint-body {
+  margin-top: 8px;
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+/* 📱 Responsive adjustments */
+@media (max-width: 768px) {
+  .login-card {
+    width: 85%;
+    padding: 30px 25px;
+    gap: 1rem;
+  }
+
+  .login-title {
+    font-size: 1.4rem;
+  }
+
+  .input-group input {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  .btn-login {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .netflix-logo {
+    top: 20px;
+    left: 30px;
+    font-size: 2rem;
+  }
+}
+
+
